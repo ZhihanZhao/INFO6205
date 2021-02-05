@@ -1,5 +1,4 @@
-# INFO6205
-Assignment2
+# Assignment2
 =============
 ## Part1<br>
 ### code:[Timer.java](src/main/java/edu/neu/coe/info6205/util/Timer.java)
@@ -16,4 +15,9 @@ Assignment2
 ### code:[SortTime.java](src/main/java/edu/neu/coe/info6205/sort/simple/SortTime.java)
 ### result screenshot:
 ![part2_result](https://github.com/ZhihanZhao/INFO6205/blob/main/Assignments/Assignment2/screenshot/part3.png)
+
+
+# Analysis
+## From the 5 times test, the generation time is following order:<br>
+## Reverselist > Randomlist > Partiallylist > Orderedlist
 
