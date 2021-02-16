@@ -36,21 +36,17 @@ public class UF_HWQUPC_Client {
         System.out.printf("There are %d (n) sites, the number of connections is %d",n,connections);
 
         //analysis
-        File M = new File("/M.txt");
-        File N = new File("/N.txt");
-        FileOutputStream Mos = new FileOutputStream(M);
-        FileOutputStream Nos = new FileOutputStream(N);
-        OutputStreamWriter oswM = new OutputStreamWriter(Mos);
-        OutputStreamWriter oswN = new OutputStreamWriter(Nos);
-        BufferedWriter bwM = new BufferedWriter(oswM);
-        BufferedWriter bwN = new BufferedWriter(oswN);
+        FileWriter fwriterM = new FileWriter("F:\\Assignment3\\file\\M.txt", true);
+        FileWriter fwriterN = new FileWriter("F:\\Assignment3\\file\\N.txt",true);
 
         for(int i = 1000; i<5000; i++){
-            bwM.write(UF_HWQUPC_Client.count(i)[1]);
-            bwN.write(i);
-            bwM.newLine();
-            bwN.newLine();
+            String stringM = UF_HWQUPC_Client.count(i)[1] + ",";
+            fwriterM.write(stringM);
+            String stringN = i + ",";
+            fwriterN.write(stringN);
         }
+        fwriterM.close();
+        fwriterN.close();
 
 
     }
