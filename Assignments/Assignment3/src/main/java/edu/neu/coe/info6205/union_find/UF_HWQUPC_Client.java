@@ -1,10 +1,11 @@
 package edu.neu.coe.info6205.union_find;
 
-import java.io.*;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Random;
 import java.util.Scanner;
 
-public class UF_HWQUPC_Client {
+class UF_HWQUPC_Client {
 
     public static int[] count(int n){
         int connections = 0;
